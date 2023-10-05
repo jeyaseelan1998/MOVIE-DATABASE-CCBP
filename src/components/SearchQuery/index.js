@@ -61,12 +61,10 @@ const SearchQuery = () => {
             <div className="route-page-body">
               {renderSearchResultViews(value)}
             </div>
-            {searchResponse.results && (
-              <Pagination
-                totalPages={searchResponse.totalPages}
-                apiCallback={onTriggerSearchingQuery}
-              />
-            )}
+            <Pagination
+              totalPages={searchResponse.totalPages}
+              apiCallback={onTriggerSearchingQuery}
+            />
           </>
         )
       }}

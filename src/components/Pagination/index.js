@@ -48,22 +48,12 @@ class Pagination extends React.Component {
 
     return (
       <div className="mb-3 d-flex justify-content-center align-items-center">
-        <button
-          type="button"
-          className="control-btn"
-          disabled={pageNo === 1}
-          onClick={this.onPrevPage}
-        >
-          prev
+        <button type="button" className="control-btn" onClick={this.onPrevPage}>
+          Prev
         </button>
         <p className="page-no">{pageNo}</p>
-        <button
-          type="button"
-          className="control-btn"
-          onClick={this.onNextPage}
-          disabled={pageNo === totalPages}
-        >
-          next
+        <button type="button" className="control-btn" onClick={this.onNextPage}>
+          Next
         </button>
       </div>
     )

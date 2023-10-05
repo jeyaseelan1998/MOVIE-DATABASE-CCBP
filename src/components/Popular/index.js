@@ -67,12 +67,10 @@ class Popular extends React.Component {
             ? this.renderLoadingView()
             : this.renderPopularMoviesList()}
         </div>
-        {!isLoading && (
-          <Pagination
-            totalPages={popularMovieResponse.totalPages}
-            apiCallback={this.getPopularMoviesResponse}
-          />
-        )}
+        <Pagination
+          totalPages={popularMovieResponse.totalPages}
+          apiCallback={this.getPopularMoviesResponse}
+        />
       </>
     )
   }

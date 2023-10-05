@@ -68,12 +68,10 @@ class TopRated extends React.Component {
             ? this.renderLoadingView()
             : this.renderPopularMoviesList()}
         </div>
-        {!isLoading && (
-          <Pagination
-            totalPages={topRatedMovieResponse.totalPages}
-            apiCallback={this.getTopRatedMoviesResponse}
-          />
-        )}
+        <Pagination
+          totalPages={topRatedMovieResponse.totalPages}
+          apiCallback={this.getTopRatedMoviesResponse}
+        />
       </>
     )
   }

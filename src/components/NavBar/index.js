@@ -27,10 +27,11 @@ const NavBar = props => {
         return (
           <div className="d-flex align-items-center">
             <input
-              type="search"
+              type="text"
               className="me-2 search-input"
               onChange={onChangeHandler}
               value={searchInput}
+              placeholder="Search"
             />
             <button
               className="btn btn-outline-info"
